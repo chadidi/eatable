@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call(WeightUnitSeed::class);
+        $this->call(FoodSeed::class);
+        $this->call(PoisonousFoodSeed::class);
     }
 }
